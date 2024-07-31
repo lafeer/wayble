@@ -1,11 +1,5 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { JobsTable } from '@/components/JobsTable/JobsTable';
 
 export default function HomePage() {
-  return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
-  );
+  return <JobsTable />;
 }

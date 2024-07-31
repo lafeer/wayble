@@ -1,14 +1,17 @@
-import '@mantine/core/styles.css';
 import React from 'react';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
-import { theme } from '../theme';
+import { ColorSchemeScript } from '@mantine/core';
+import '@mantine/core/styles.css';
+import { Providers } from '@/providers';
+import PageLayout from '@/components/PageLayout/PageLayout';
+import { auth } from '@/auth';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'Wayble Job Board',
+  description: 'A job board for Wayble',
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default async function RootLayout({ children }: { children: any }) {
+  await auth();
   return (
     <html lang="en">
       <head>
@@ -20,7 +23,9 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <Providers>
+          <PageLayout>{children}</PageLayout>
+        </Providers>
       </body>
     </html>
   );

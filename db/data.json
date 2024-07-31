@@ -1,0 +1,64 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "company": "Wayble",
+      "title": "Software Engineer",
+      "description": "Work on the Wayble platform",
+      "address": {
+        "street": "123 Wayble St",
+        "city": "Toronto",
+        "province": "ON",
+        "postalCode": "M1M 1M1"
+      }
+    },
+    {
+      "id": "2",
+      "company": "Acme",
+      "title": "Product Manager",
+      "description": "Manage the product",
+      "address": {
+        "street": "456 Acme St",
+        "city": "Ottawa",
+        "province": "ON",
+        "postalCode": "M2M 2M2"
+      }
+    },
+    {
+      "id": "3",
+      "company": "Globex",
+      "title": "Data Scientist",
+      "description": "Analyze data",
+      "address": {
+        "street": "789 Globex St",
+        "city": "Vancouver",
+        "province": "BC",
+        "postalCode": "V3V 3V3"
+      }
+    },
+    {
+      "id": "4",
+      "company": "Initech",
+      "title": "Sales Associate",
+      "description": "Sell products",
+      "address": {
+        "street": "101 Initech St",
+        "city": "Edmonton",
+        "province": "AB",
+        "postalCode": "E4E 4E4"
+      }
+    },
+    {
+      "id": "5",
+      "company": "Umbrella Corp",
+      "title": "Security Officer",
+      "description": "Protect the company",
+      "address": {
+        "street": "101 Umbrella St",
+        "city": "Calgary",
+        "province": "AB",
+        "postalCode": "C5C 5C5"
+      }
+    }
+  ]
+}
